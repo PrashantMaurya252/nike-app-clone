@@ -1,22 +1,23 @@
-import { useState } from 'react'
+import { CustomerReviews,Footer,Hero,PopularProduct,Services,SpecialOffer,Subscribe,SuperQuality } from "./sections"
+import Nav from "./components/Nav"
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
    <main className='relative'>
-    Nav
+    <Nav/>
     <section className='xl-padding-1 wide:padding-r padding-b'>
-      Hero
+      <Hero/>
     </section>
-    <section className='padding'>PopularProducts</section>
-    <section className='padding-x py-10'>SuperQuality</section>
-    <section className='padding'>Services</section>
-    <section className='padding'>SpecialOffer</section>
-    <section className='bg-pale-blue padding'>CustomerReviews</section>
-    <section className='padding'>Subscribe</section>
-    <section className='padding'>Footer</section>
+    <section className='padding'><PopularProduct/></section>
+    <section className='padding-x py-10'><SuperQuality/></section>
+    <section className='padding'><Services/></section>
+    <section className='padding'><SpecialOffer/></section>
+    <section className='bg-pale-blue padding'><CustomerReviews/></section>
+    <section className='padding-x sm:py-32 py-16 w-full'><Subscribe/></section>
+    <section className='bg-black padding-x padding-t pb-8'><Footer/></section>
    </main>
   )
 }
